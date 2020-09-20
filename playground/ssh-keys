@@ -1,0 +1,13 @@
+// Setting up github and ssh keys
+ssh-keygen -t rsa -b 4096 -C 'example@mail.com'
+// bytes, click enter ...
+CMD: ls -al ~/.ssh
+// to view ssh file/key..
+CMD: eval "$(ssh-agent -s)"
+// starts the agent and prints it to the console
+CMD: ssh-add ~/.ssh/id_rsa
+//Tells agent where file lives
+CMD: clip < ~/.ssh/id_rsa.pub
+// Copy ssh-key to clipboard
+CMD:  ssh -T git@github.com
+// Tests our connection and properly sets up the key
