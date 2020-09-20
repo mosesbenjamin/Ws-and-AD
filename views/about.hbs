@@ -4,23 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Some website</title>
-        <style>
-        .container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
+    {{> style}}
 </head>
 <body>
     <div class="container">
-        <h1>{{ pageTitle }}</h1>
+        {{> header}}
         <p>Some text here</p>
 
-        <footer>
-            <p>Copyright {{ currentYear }}</p>
-        </footer>
+        {{> footer}}
     </div>
 </body>
 </html>
