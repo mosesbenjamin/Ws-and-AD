@@ -1,0 +1,7 @@
+CMD: heroku keys:add
+// Add ssh key
+CMD: heroku keys
+// Print keys
+CMD: heroku keys:remove [email associated to key]
+CMD: ssh -v git@heroku.com
+
